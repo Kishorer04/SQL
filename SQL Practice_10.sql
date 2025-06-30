@@ -72,3 +72,10 @@ INSERT INTO LIBRARY VALUES(NULL,'CAR'); -- Allowed
 
 DELETE FROM SCHOOL WHERE SNO = 101; -- This line deletes the record in the parent table, as well as the corresponding dependent records in the child table because of On Delete Cascade
 
+
+-- ON DELETE CASCADE real time example
+/*
+ON DELETE CASCADE automatically deletes child rows when the parent row is deleted in a foreign key relationship.
+Example... When a Customer record is deleted in the Customer table, the corresponding customer's data in the Orders table (child table) 
+should also be deleted
+*/
